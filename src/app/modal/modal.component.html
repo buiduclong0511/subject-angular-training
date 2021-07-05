@@ -1,2 +1,13 @@
 <p>modal works!</p>
+<div [formGroup]="formData">
+    <div class="formGroup">
+        <label for="name">Name: </label><br>
+        <input type="text" id="name" formControlName="name">
+    </div>
+    <div class="formGroup">
+        <label for="age">Age: </label><br>
+        <input type="text" id="age" formControlName="age">
+    </div>
+</div>
+<button (click)="handleGetData()">Get data</button>
 <button (click)="handleCloseModal()">&times;</button>

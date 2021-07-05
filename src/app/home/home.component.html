@@ -1,1 +1,12 @@
 <button (click)="handleShowModal()">Show modal</button>
+<div [formGroup]="formData">
+    <div class="formGroup">
+        <label for="name">Name: </label><br>
+        <input type="text" id="name" formControlName="name">
+    </div>
+    <div class="formGroup">
+        <label for="age">age: </label><br>
+        <input type="text" id="age" formControlName="age">
+    </div>
+    <button (click)="handleSubmit()">Submit</button>
+</div>
